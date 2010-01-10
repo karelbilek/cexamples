@@ -1,0 +1,36 @@
+: bool
+ 
+- neni BOOL! dá se emulovat přes
+[----
+typedef unsigned char bool;
+enum {true=1,false=0};
+---]
+- viz taky http://c-faq.com/bool/index.html
+
+:ORování hodnot
+- hodnoty se orujou přes |, nikolivěk přes ||. || je logický OR!
+
+: atoi
+[------
+#include <stdlib.h>
+
+int
+atoi(const char *str);
+-----]
+
+- na longy je lepší strtol
+
+: basename
+[-----
+#include <libgen.h>
+
+char *
+basename(char *path);
+----]
+
+:errno
+[-----
+#include <errno.h>
+....
+if (errno==EMACRO) ...
+----]

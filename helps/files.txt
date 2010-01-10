@@ -1,0 +1,69 @@
+: access
+[------
+#include <unistd.h>
+
+int
+access(const char *path, int amode);
+-----]
+
+- pokud existuje a ma prava, vrati 0
+- pokud neexistuje, vrati -1 a do errno ENOENT
+- pokud existuje a ma prava, vrati -1 a da do errno neco jinyho
+
+: open
+
+[-----------
+#include <fcntl.h>
+
+int
+open(const char *path, int oflag, ...);
+---------]
+
+– O_RDONLY/O_WRONLY/O_RDWR - read/write/readwrite
+– O_APPEND - KAŽDÉ write jde na konec souboru
+- O_CREAT - vytvoř když neni....
+- O_EXCL - ...a když je, vrať chybu
+- O_TRUNC - zruš předchozí obsah
+
+- vrací fildes, -1 na chybě
+- při chybě vrátí číslo chyby v errno, asi
+
+
+: read
+
+[----------
+#include <unistd.h>
+
+ssize_t
+read(int fildes, void *buf, size_t nbyte);
+
+------]
+- vrací počet přečtených bytů (>0), 0 na konci souboru, nebo -1 při chybě
+- pokud je chyba, co se dá "přestát" (např. čeká na rouru), vrátí -1, ale do errno dá EAGAIN
+
+: write
+
+[-------
+#include <unistd.h>
+
+ssize_t
+pwrite(int fildes, const void *buf, size_t nbyte, off_t offset);
+
+ssize_t
+write(int fildes, const void *buf, size_t nbyte);
+------]
+- totéž, co read
+
+: close
+[----
+#include <unistd.h>
+
+int
+close(int fildes);
+----]
+
+: default descriptory
+
+- 0 stdin
+- 1 stdout
+- 2 stderr

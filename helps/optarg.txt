@@ -1,0 +1,28 @@
+: optarg
+
+[-----
+
+#include <unistd.h>
+
+extern char *optarg;
+extern int optind;
+extern int optopt;
+extern int opterr;
+extern int optreset;
+
+int
+getopt(int argc, char * const argv[], const char *optstring);
+
+----]
+
+- getopt parsuje po jednom argv a vrací známé parametry = definované v optstring
+- formát optstring: "a:bc:" = a,c mají argument, b nemá argument
+- optarg pak kdyžtak ukazuje na ten argument
+- getopt vrací fakt 'a'
+- optind ukazuje na ten poslední argument
+
+- končí ale s -1, tj ne 0!
+
+- napsat si otions do structu neni spatny napad
+
+- strcpy zkopíruje z druhého param do 1. param string, hodí se na optarg, potrebuje string.h
