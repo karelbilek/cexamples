@@ -1,3 +1,16 @@
+:malloc/free
+[--------
+int *ptr = (int*)malloc(10 * sizeof (int));
+if (ptr == NULL) {
+} else {
+    free(ptr);  
+    ptr = NULL; 
+}
+--------]
+
+
+
+
 : bool
  
 - neni BOOL! dá se emulovat přes
@@ -34,3 +47,6 @@ basename(char *path);
 ....
 if (errno==EMACRO) ...
 ----]
+
+:podavani textu pres roury/sockety
+- lepší než tam strkat write() a open() je namapovat si tu věc jako STDIN/OUT a číst přes fgets a psát přes printf.

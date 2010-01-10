@@ -1,0 +1,9 @@
+:forkování 101
+
+[---------------
+switch (int pid = fork) {
+	case 0: dítě
+	case -1: WTF SHIT ERROR I AM LOST
+	default: rodič (a pid je IDprocesu)
+}
+---------------]

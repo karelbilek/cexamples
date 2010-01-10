@@ -1,0 +1,11 @@
+:vytvoření pajpy
+
+[----------
+ #include <unistd.h>
+
+int pd[2];
+pipe(pd);
+------]
+
+-pd[0] je konzument
+-pd[1] je producent
