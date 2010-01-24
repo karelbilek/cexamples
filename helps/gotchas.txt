@@ -1,3 +1,8 @@
+:kokotiny
+-getcwd: no such file... pri maku znamena, ze si presunul adresar, ve kterym jsi - soubory existuji, ale adresar ne
+
+
+
 :malloc/free
 [--------
 int *ptr = (int*)malloc(10 * sizeof (int));
