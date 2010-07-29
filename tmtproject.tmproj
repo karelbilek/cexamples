@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>helps/files.txt</string>
+	<string>helps/gotchas.txt</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>helps/optarg.txt</string>
 			<key>lastUsed</key>
-			<date>2010-01-09T23:46:07Z</date>
+			<date>2010-01-10T00:52:14Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -22,11 +22,25 @@
 			<key>filename</key>
 			<string>helps/files.txt</string>
 			<key>lastUsed</key>
-			<date>2010-01-09T23:55:25Z</date>
+			<date>2010-01-10T08:13:55Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>helps/fork.txt</string>
+			<key>lastUsed</key>
+			<date>2010-01-10T05:04:29Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>helps/pajpa.txt</string>
+			<key>lastUsed</key>
+			<date>2010-01-10T05:22:40Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>helps/gotchas.txt</string>
+			<key>lastUsed</key>
+			<date>2010-01-10T08:13:55Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -54,9 +68,37 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>19</integer>
 				<key>line</key>
-				<integer>9</integer>
+				<integer>82</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>39</integer>
+		</dict>
+		<key>helps/fork.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>16</integer>
+				<key>line</key>
+				<integer>8</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>helps/gotchas.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>42</integer>
+				<key>line</key>
+				<integer>12</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -77,16 +119,33 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>helps/pajpa.txt</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>20</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>4/1/README.txt</string>
 		<string>helps/optarg.txt</string>
 		<string>helps/files.txt</string>
+		<string>helps/gotchas.txt</string>
+		<string>helps/pajpa.txt</string>
+		<string>helps/fork.txt</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{248, 71}, {904, 844}}</string>
+	<string>{{423, 145}, {904, 844}}</string>
 </dict>
 </plist>

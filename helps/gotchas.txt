@@ -8,7 +8,9 @@ if (ptr == NULL) {
 }
 --------]
 
-
+:lseek
+-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-lseek(fildes, JAKMOC, MAKRO) - ne naopak!
 
 
 : bool
